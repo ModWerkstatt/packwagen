@@ -1,0 +1,1473 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.176, 1.45723, 4.17571, },
+		bbMin = { -13.176, -1.45723, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 32.244251251221, 1.5048484802246, 2.106575012207, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/rumpf_neu_lod0.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				    {
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/innen_pop.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/innen_lod0.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod0.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/generator_lod0.msh",
+						        name = "generator",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.46909, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod0.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46909, 0, 0, 1, },
+                    },
+					{
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/fenster_lod0.msh",
+						name = "kupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    children = {
+		                    {
+			                    animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_left = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_left = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    children = {
+				                    {
+                                        animations = {
+						                    open_all_doors = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_all_doors = {
+                                                forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    open_doors_left = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_doors_left = {
+							                    forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+					                    },
+					                    _meshId = 26,
+                                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+					                    mesh = "vehicle/waggon/mWagen/tueren_neu/tritt_innen_2l_lod0.msh",
+					                    name = "tritt_innen_2l",
+					                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.016, -0.0406, -0.109, 1, },
+				                    },
+			                    },
+			                    _meshId = 27,
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+			                    mesh = "vehicle/waggon/mWagen/tueren_neu/tuer_2l_lod0.msh",
+			                    name = "tuer_2l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28261351585388, 0.056821286678314, 0.15286032855511, 1, },
+		                    },
+	                    },
+	                    _meshId = 28,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+	                    mesh = "vehicle/waggon/mWagen/tueren_neu/falt_2l_lod0.msh",
+	                    name = "falt_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.767667770386, 1.3277633190155, 1.2446874380112, 1, },
+                    },
+                    {
+						animations = {
+							open_all_doors = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_all_doors = {
+                                forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            open_doors_left = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_doors_left = {
+					            forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+                        },
+						_meshId = 29,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+						mesh = "vehicle/waggon/mWagen/tueren_neu/klapptritt_2l_lod0.msh",
+						name = "klapptritt_2l",
+						transf = { 0.99678605794907, 0.048773940652609, -0.063549898564816, 0, 0.041729722172022, 0.36102858185768, 0.93162059783936, 0, 0.068382143974304, -0.93127834796906, 0.35783290863037, 0, -12.259392738342, 1.3023780584335, 0.57851153612137, 1, },
+					},
+        			{
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    children = {
+		                    {
+			                    animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_right = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_right = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    children = {
+				                    {
+                                        animations = {
+						                    open_all_doors = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_all_doors = {
+                                                forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    open_doors_right = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_doors_right = {
+							                    forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+					                    },
+					                    _meshId = 30,
+                                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+					                    mesh = "vehicle/waggon/mWagen/tueren_neu/tritt_innen_2r_lod0.msh",
+					                    name = "tritt_innen_2r",
+					                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.016, 0.0406, -0.109, 1, },
+				                    },
+			                    },
+			                    _meshId = 31,
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+			                    mesh = "vehicle/waggon/mWagen/tueren_neu/tuer_2r_lod0.msh",
+			                    name = "tuer_2r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28261351585388, -0.056821286678314, 0.15286032855511, 1, },
+		                    },
+	                    },
+	                    _meshId = 32,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+	                    mesh = "vehicle/waggon/mWagen/tueren_neu/falt_2r_lod0.msh",
+	                    name = "falt_2r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.767667770386, -1.3277633190155, 1.2446874380112, 1, },
+                    },
+                    {
+						animations = {
+							open_all_doors = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_all_doors = {
+                                forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            open_doors_right = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_doors_right = {
+					            forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+                        },
+						_meshId = 33,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+						mesh = "vehicle/waggon/mWagen/tueren_neu/klapptritt_2r_lod0.msh",
+						name = "klapptritt_2r",
+						transf = { 0.99713933467865, -0.041184041649103, -0.063380114734173, 0, -0.047176856547594, 0.31603237986565, -0.94757461547852, 0, 0.059055123478174, 0.94785410165787, 0.31318539381027, 0, -12.259392738342, -1.3023780584335, 0.57851153612137, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/red_lights.mtl", },
+						mesh = "vehicle/waggon/mWagen/zugschlussleuchte_lod0.msh",
+						name = "licht_oben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/rumpf_neu_lod1.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				    {
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/innen_pop.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/innen_lod0.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod1.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/generator_lod1.msh",
+						        name = "generator",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.46909, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod1.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46909, 0, 0, 1, },
+                    },
+					{
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/fenster_lod0.msh",
+						name = "kupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    children = {
+		                    {
+			                    animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_left = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_left = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    children = {
+				                    {
+                                        animations = {
+						                    open_all_doors = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_all_doors = {
+                                                forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    open_doors_left = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_doors_left = {
+							                    forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+					                    },
+					                    _meshId = 26,
+                                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+					                    mesh = "vehicle/waggon/mWagen/tueren_neu/tritt_innen_2l_lod1.msh",
+					                    name = "tritt_innen_2l",
+					                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.016, -0.0406, -0.109, 1, },
+				                    },
+			                    },
+			                    _meshId = 27,
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+			                    mesh = "vehicle/waggon/mWagen/tueren_neu/tuer_2l_lod1.msh",
+			                    name = "tuer_2l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28261351585388, 0.056821286678314, 0.15286032855511, 1, },
+		                    },
+	                    },
+	                    _meshId = 28,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+	                    mesh = "vehicle/waggon/mWagen/tueren_neu/falt_2l_lod1.msh",
+	                    name = "falt_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.767667770386, 1.3277633190155, 1.2446874380112, 1, },
+                    },
+                    {
+						animations = {
+							open_all_doors = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_all_doors = {
+                                forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            open_doors_left = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_doors_left = {
+					            forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+                        },
+						_meshId = 29,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+						mesh = "vehicle/waggon/mWagen/tueren_neu/klapptritt_2l_lod1.msh",
+						name = "klapptritt_2l",
+						transf = { 0.99678605794907, 0.048773940652609, -0.063549898564816, 0, 0.041729722172022, 0.36102858185768, 0.93162059783936, 0, 0.068382143974304, -0.93127834796906, 0.35783290863037, 0, -12.259392738342, 1.3023780584335, 0.57851153612137, 1, },
+					},
+        			{
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    children = {
+		                    {
+			                    animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_right = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_right = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    children = {
+				                    {
+                                        animations = {
+						                    open_all_doors = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_all_doors = {
+                                                forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    open_doors_right = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_doors_right = {
+							                    forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+					                    },
+					                    _meshId = 30,
+                                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+					                    mesh = "vehicle/waggon/mWagen/tueren_neu/tritt_innen_2r_lod1.msh",
+					                    name = "tritt_innen_2r",
+					                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.016, 0.0406, -0.109, 1, },
+				                    },
+			                    },
+			                    _meshId = 31,
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+			                    mesh = "vehicle/waggon/mWagen/tueren_neu/tuer_2r_lod1.msh",
+			                    name = "tuer_2r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28261351585388, -0.056821286678314, 0.15286032855511, 1, },
+		                    },
+	                    },
+	                    _meshId = 32,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+	                    mesh = "vehicle/waggon/mWagen/tueren_neu/falt_2r_lod1.msh",
+	                    name = "falt_2r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.767667770386, -1.3277633190155, 1.2446874380112, 1, },
+                    },
+                    {
+						animations = {
+							open_all_doors = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_all_doors = {
+                                forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            open_doors_right = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_doors_right = {
+					            forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+                        },
+						_meshId = 33,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+						mesh = "vehicle/waggon/mWagen/tueren_neu/klapptritt_2r_lod1.msh",
+						name = "klapptritt_2r",
+						transf = { 0.99713933467865, -0.041184041649103, -0.063380114734173, 0, -0.047176856547594, 0.31603237986565, -0.94757461547852, 0, 0.059055123478174, 0.94785410165787, 0.31318539381027, 0, -12.259392738342, -1.3023780584335, 0.57851153612137, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/red_lights.mtl", },
+						mesh = "vehicle/waggon/mWagen/zugschlussleuchte_lod0.msh",
+						name = "licht_oben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 300,
+		},
+		{
+			node = {
+				children = {
+					{
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/rumpf_neu_lod2.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				    {
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/innen_pop.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/innen_lod0.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod2.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.46909, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod2.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46909, 0, 0, 1, },
+                    },
+					{
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+						mesh = "vehicle/waggon/mWagen/halbpackwagen/fenster_lod0.msh",
+						name = "kupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_left = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_left = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2l.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    children = {
+		                    {
+			                    animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_left = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_left = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2l.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    children = {
+				                    {
+                                        animations = {
+						                    open_all_doors = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_all_doors = {
+                                                forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    open_doors_left = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_doors_left = {
+							                    forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2l.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+					                    },
+					                    _meshId = 26,
+                                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+					                    mesh = "vehicle/waggon/mWagen/tueren_neu/tritt_innen_2l_lod2.msh",
+					                    name = "tritt_innen_2l",
+					                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.016, -0.0406, -0.109, 1, },
+				                    },
+			                    },
+			                    _meshId = 27,
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+			                    mesh = "vehicle/waggon/mWagen/tueren_neu/tuer_2l_lod2.msh",
+			                    name = "tuer_2l",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28261351585388, 0.056821286678314, 0.15286032855511, 1, },
+		                    },
+	                    },
+	                    _meshId = 28,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+	                    mesh = "vehicle/waggon/mWagen/tueren_neu/falt_2l_lod2.msh",
+	                    name = "falt_2l",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.767667770386, 1.3277633190155, 1.2446874380112, 1, },
+                    },
+                    {
+						animations = {
+							open_all_doors = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_all_doors = {
+                                forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            open_doors_left = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_doors_left = {
+					            forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2l.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+                        },
+						_meshId = 29,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+						mesh = "vehicle/waggon/mWagen/tueren_neu/klapptritt_2l_lod2.msh",
+						name = "klapptritt_2l",
+						transf = { 0.99678605794907, 0.048773940652609, -0.063549898564816, 0, 0.041729722172022, 0.36102858185768, 0.93162059783936, 0, 0.068382143974304, -0.93127834796906, 0.35783290863037, 0, -12.259392738342, 1.3023780584335, 0.57851153612137, 1, },
+					},
+        			{
+	                    animations = {
+		                    open_all_doors = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_all_doors = {
+                                forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    open_doors_right = {
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+		                    close_doors_right = {
+			                    forward = false,
+			                    params = {
+				                    id = "vehicle/waggon/mWagen/neu/falt_2r.ani",
+			                    },
+			                    type = "FILE_REF",
+		                    },
+	                    },
+	                    children = {
+		                    {
+			                    animations = {
+				                    open_all_doors = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_all_doors = {
+                                        forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    open_doors_right = {
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+				                    close_doors_right = {
+					                    forward = false,
+					                    params = {
+						                    id = "vehicle/waggon/mWagen/neu/tuer_2r.ani",
+					                    },
+					                    type = "FILE_REF",
+				                    },
+			                    },
+			                    children = {
+				                    {
+                                        animations = {
+						                    open_all_doors = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_all_doors = {
+                                                forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    open_doors_right = {
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+						                    close_doors_right = {
+							                    forward = false,
+							                    params = {
+								                    id = "vehicle/waggon/mWagen/neu/tritt_innen_2r.ani",
+							                    },
+							                    type = "FILE_REF",
+						                    },
+					                    },
+					                    _meshId = 30,
+                                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+					                    mesh = "vehicle/waggon/mWagen/tueren_neu/tritt_innen_2r_lod2.msh",
+					                    name = "tritt_innen_2r",
+					                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.016, 0.0406, -0.109, 1, },
+				                    },
+			                    },
+			                    _meshId = 31,
+                                materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", "vehicle/waggon/mWagen/halbpackwagen/fenster.mtl", },
+			                    mesh = "vehicle/waggon/mWagen/tueren_neu/tuer_2r_lod2.msh",
+			                    name = "tuer_2r",
+			                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28261351585388, -0.056821286678314, 0.15286032855511, 1, },
+		                    },
+	                    },
+	                    _meshId = 32,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+	                    mesh = "vehicle/waggon/mWagen/tueren_neu/falt_2r_lod2.msh",
+	                    name = "falt_2r",
+	                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.767667770386, -1.3277633190155, 1.2446874380112, 1, },
+                    },
+                    {
+						animations = {
+							open_all_doors = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_all_doors = {
+                                forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            open_doors_right = {
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+				            close_doors_right = {
+					            forward = false,
+					            params = {
+						            id = "vehicle/waggon/mWagen/neu/klapptritt_2r.ani",
+					            },
+					            type = "FILE_REF",
+				            },
+                        },
+						_meshId = 33,
+                        materials = { "vehicle/waggon/mWagen/halbpackwagen/rumpf_bdums273_pbl.mtl", },
+						mesh = "vehicle/waggon/mWagen/tueren_neu/klapptritt_2r_lod2.msh",
+						name = "klapptritt_2r",
+						transf = { 0.99713933467865, -0.041184041649103, -0.063380114734173, 0, -0.047176856547594, 0.31603237986565, -0.94757461547852, 0, 0.059055123478174, 0.94785410165787, 0.31318539381027, 0, -12.259392738342, -1.3023780584335, 0.57851153612137, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 300,
+			visibleTo = 1500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1974,
+			yearTo = 1983,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			name = _("bdums273_pbl_name"),
+			description = _("bdm272_desc")
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+                {
+					axles = { "vehicle/waggon/mWagen/allgemein/rad_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 21, },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/waggon/mWagen/allgemein/rad_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 21, },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/waggon/mWagen/allgemein/rad_lod2.msh", },
+				},
+            },
+			engines = { },
+			soundSet = {
+				name = "UIC-X",
+			},
+			topSpeed = 38.888888889,
+			weight = 33,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 1.4, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 1.4, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, 1.4, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.35, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.35, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.35, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -0.3, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -0.3, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -0.3, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.35, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -2.0, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -2.0, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -2.0, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -3.75, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -3.75, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -3.75, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.85, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.85, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.85, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -5.55, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -5.55, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -5.55, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.65, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.65, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.65, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -7.25, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -7.25, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -7.25, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.35, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.35, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.35, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -9, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -9, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { -1, 0, 0, 0, -0, -1, 0, 0, 0, 0, 1, 0, -9, 0.15, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.1, -1, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.1, -0.45, 1.27, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.05, 0.15, 1.27, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 60,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+            groupFileName = "vehicle/waggon/mWagen/halbpackwagen/menu_halbpackwagen.mdl",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,337 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.176, 1.45723, 4.17571, },
+		bbMin = { -13.176, -1.45723, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 32.244251251221, 1.5048484802246, 2.106575012207, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/rumpf_dum902_dienst.mtl", "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/rumpf_lod0.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/innen.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/innen_lod0.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod0.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.46909, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod0.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46909, 0, 0, 1, },
+                    },
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/fenster.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/fenster_lod0.msh",
+						name = "kupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/red_lights.mtl", },
+						mesh = "vehicle/waggon/mWagen/zugschlussleuchte_lod0.msh",
+						name = "licht_oben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/rumpf_dum902_dienst.mtl", "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/rumpf_lod1.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/innen.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/innen_lod1.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod1.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.46909, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod1.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46909, 0, 0, 1, },
+                    },
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/fenster.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/fenster_lod0.msh",
+						name = "kupplung",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/red_lights.mtl", },
+						mesh = "vehicle/waggon/mWagen/zugschlussleuchte_lod0.msh",
+						name = "licht_oben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 300,
+		},
+		{
+			node = {
+				children = {
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/rumpf_dum902_dienst.mtl", "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/rumpf_lod2.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+                        materials = { "vehicle/waggon/mWagen/packwagen/innen.mtl", },
+						mesh = "vehicle/waggon/mWagen/packwagen/innen_lod2.msh",
+						name = "neu_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod2.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.46909, 0, 0, 1, },
+                    },
+                    {
+                        children = {
+					        {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/bogie_lod2.msh",
+						        name = "bogie",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+        					},
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.24191, 0, 0.469196, 1, },
+					        },
+                            {
+                                materials = { "vehicle/waggon/mWagen/packwagen/allgemein.mtl", },
+						        mesh = "vehicle/waggon/mWagen/allgemein/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.24191, 0, 0.469196, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46909, 0, 0, 1, },
+                    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 300,
+			visibleTo = 1500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1994,
+--			yearTo = 1983,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			name = _("dum902_dienst_name"),
+			description = _("Pw4umg_desc")
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+                {
+					axles = { "vehicle/waggon/mWagen/allgemein/rad_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 12, },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/waggon/mWagen/allgemein/rad_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 12, },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/waggon/mWagen/allgemein/rad_lod2.msh", },
+				},
+            },
+			engines = { },
+			soundSet = {
+				name = "UIC-X",
+			},
+			topSpeed = 38.888888889,
+			weight = 33,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 60,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+            groupFileName = "vehicle/waggon/mWagen/packwagen/menu_packwagen.mdl",
+		},
+	},
+	version = 1,
+}
+end
